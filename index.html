@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AcadFlow | The Academic Conference Platform</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background: #f8fafc;
+            color: #0f172a;
+            line-height: 1.6;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        /* Header */
+        header {
+            background: #0f172a;
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 26px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        /* Hero */
+        .hero {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+            margin-top: 60px;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+
+        .hero span {
+            color: #2563eb;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 25px;
+            color: #334155;
+        }
+
+        .badge {
+            background: #e0e7ff;
+            color: #1e40af;
+            padding: 8px 14px;
+            display: inline-block;
+            border-radius: 6px;
+            margin-bottom: 20px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        /* Card */
+        .card {
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Form */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        input,
+        textarea {
+            padding: 12px;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            font-size: 15px;
+            outline: none;
+        }
+
+        input:focus,
+        textarea:focus {
+            border-color: #2563eb;
+        }
+
+        button {
+            background: #2563eb;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #1e40af;
+        }
+
+        /* About */
+        .about {
+            margin-top: 80px;
+            text-align: center;
+        }
+
+        .about h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            max-width: 700px;
+            margin: auto;
+            color: #475569;
+        }
+
+        /* Footer */
+        footer {
+            background: #020617;
+            color: #cbd5e1;
+            padding: 30px 0;
+            margin-top: 80px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        footer a {
+            color: #93c5fd;
+            text-decoration: none;
+        }
+
+        /* Responsive */
+        @media(max-width:900px) {
+
+            .hero {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .hero h1 {
+                font-size: 34px;
+            }
+
+            .nav {
+                justify-content: center;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container nav">
+            <div class="logo">AcadFlow</div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="container hero">
+
+        <!-- Left -->
+        <div>
+            <div class="badge">🚀 Coming Soon</div>
+
+            <h1>
+                The <span>Academic Conference</span> Platform
+            </h1>
+
+            <p>
+                AcadFlow is currently under development to simplify
+                conference management for academic institutions.
+                We are building a complete platform for registrations,
+                payments, papers, sessions, and certificates.
+            </p>
+
+            <p>
+                Stay connected with us for early access and updates.
+            </p>
+
+            <p>
+                📧 Contact: <strong>acadflow.platform@gmail.com</strong>
+            </p>
+        </div>
+
+        <!-- Right -->
+        <div class="card">
+
+            <h3 style="margin-bottom:20px;">Get in Touch</h3>
+
+            <!-- Frontend Form (Later you can connect backend) -->
+            <form action="https://formspree.io/f/mvzajbrj" method="POST">
+
+                <input type="text" name="name" placeholder="Your Name" required>
+
+                <input type="email" name="email" placeholder="Your Email" required>
+
+                <input type="text" name="institution" placeholder="Institution / Organization">
+
+                <textarea name="message" rows="4" placeholder="Your Message"></textarea>
+
+                <button type="submit">Send Message</button>
+
+            </form>
+
+
+            <p style="margin-top:15px;font-size:13px;color:#64748b;">
+                * This form will be connected to our support system soon.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- About Founder -->
+    <section class="container about">
+
+        <h2>About AcadFlow</h2>
+
+        <p>
+            AcadFlow is founded by <strong>Adnan Momin</strong>,
+            After experiencing the challenges of organizing academic conferences firsthand,
+            he started AcadFlow with the vision of simplifying academic workflows and
+            helping institutions run professional, organized, and stress-free events.
+        </p>
+
+    </section>
+
+    <!-- Social Media -->
+    <section class="container about">
+
+        <h2>Connect With Us</h2>
+
+        <p style="margin-bottom:25px;">
+            Follow AcadFlow on social media for updates, product progress,
+            and early access announcements.
+        </p>
+
+        <div style="display:flex;justify-content:center;gap:20px;flex-wrap:wrap;">
+
+            <a href="https://www.linkedin.com" target="_blank"
+                style="text-decoration:none;padding:10px 18px;border:1px solid #2563eb;border-radius:6px;color:#2563eb;font-weight:600;">
+                LinkedIn
+            </a>
+
+            <a href="https://instagram.com" target="_blank"
+                style="text-decoration:none;padding:10px 18px;border:1px solid #2563eb;border-radius:6px;color:#2563eb;font-weight:600;">
+                Instagram
+            </a>
+
+            <a href="https://twitter.com" target="_blank"
+                style="text-decoration:none;padding:10px 18px;border:1px solid #2563eb;border-radius:6px;color:#2563eb;font-weight:600;">
+                X (Twitter)
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 AcadFlow. All Rights Reserved
+        </p>
+
+        <p>
+            The Academic Conference Platform
+        </p>
+
+        <p>
+            Contact: <a href="mailto:acadflow@gmail.com">acadflow@gmail.com</a>
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
